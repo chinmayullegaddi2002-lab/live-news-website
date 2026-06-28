@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveNews | Real-Time Headlines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="news-header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-newspaper"></i>
+                <h1>Live<span>News</span></h1>
+            </div>
+            <div class="live-indicator">
+                <span class="live-dot"></span>
+                LIVE
+            </div>
+            <div class="current-time" id="currentTime"></div>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <div class="nav-wrapper">
+            <button class="category-btn active" data-category="general">All News</button>
+            <button class="category-btn" data-category="technology">Technology</button>
+            <button class="category-btn" data-category="science">Science</button>
+            <button class="category-btn" data-category="business">Business</button>
+            <button class="category-btn" data-category="health">Health</button>
+            <button class="category-btn" data-category="sports">Sports</button>
+        </div>
+    </nav>
+
+    <main class="news-container">
+        <div class="featured-news" id="featuredNews">
+            <div class="featured-card skeleton">
+                <div class="skeleton-image"></div>
+                <div class="skeleton-text"></div>
+            </div>
+        </div>
+
+        <div class="news-grid" id="newsGrid">
+            <!-- News cards will be dynamically inserted here -->
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading latest news...</p>
+        </div>
+    </main>
+
+    <footer class="news-footer">
+        <p>Powered by <a href="https://newsapi.org" target="_blank">NewsAPI</a> | Data updates every 30 minutes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
