@@ -1,5 +1,5 @@
 // Configuration
-const API_KEY = '4d3430ae8f304640a8665cf1ae1417e3'; // Get free key from https://newsapi.org
+const API_KEY = 'J_Da8KC203Qy-w2QA-KYMgm6bgwq3xhvRpnsJpHC0KFMTOmZ'; // Get free key from https://newsapi.org
 const COUNTRY = 'in'; // India (change to 'us', 'gb', etc.)
 const PAGE_SIZE = 12;
 
